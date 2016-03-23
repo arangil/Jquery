@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Project Status Dashboard</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == 'undefined') {
+            document.write('<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"><\/script>');
+        }
+    </script>
+    <script type="text/javascript" src="js/Chart.min.js"></script>
+    <script type="text/javascript" src="js/prjscripts.js"></script>
+
+</head>
+<body>
+    <div class="prjdiv">
+        <img src="style/memorial-hermann.png" style="float:right" alt="Memorial Hermann Project Dashboard">ISD Project Dashboard
+    </div> 
+    <div id="main" class="maincls">
+        <div id="divchart" class="prjdiv">Chart View</div>
+        <div style="width: 50%; height: 100%;" id="chartdiv">
+            <canvas id="myChart" style="width: 300px; height: auto;"></canvas>
+        </div>
+        <div id="js-legend" class="chart-legend"></div>
+    </div>
+   
+    <div id="divred" class="prjdiv">Red Projects</div>
+    <div id="project_data_red" class="prjcls"></div>
+
+    <div id="divyellow" class="prjdiv">Yellow Projects</div>
+    <div id="project_data_yellow" class="prjcls"></div>
+
+    <div id="divgreen" class="prjdiv">Active Projects</div>
+    <div id="project_data_green" class="prjcls"></div>
+   
+    <div id="divnodata" class="prjdiv">Non Status Projects</div>
+    <div id="project_data_nodata"  class="prjcls"></div>
+
+    <input type="hidden" id="noval" name="noval" />
+    <input type="hidden" id="redval" name="redval" />
+    <input type="hidden" id="yellowval" name="yellowval" />
+    <input type="hidden" id="greenval" name="greenval" />
+    <div class="prjdiv">
+        <img src="style/memorial-hermann.png" style="float:right" alt="Memorial Hermann Project Dashboard">ISD Project Dashboard
+    </div>
+</body>
+</html>
